@@ -1,0 +1,103 @@
+// Takes two numbers and ad them
+undefined
+function addition (a, b) {
+    return a + b ;
+}
+undefined
+console.log(addition (4, 5));
+VM273:1 9
+undefined
+addition(4, 5);
+9
+// Functions can call other functions
+undefined
+function doubleAddition (c, d) {
+    var total = addition(c, d) * 2;
+    return total;
+}
+undefined
+console.log(doubleAddition (65, 34));
+VM597:1 198
+undefined
+// Simple JavaScript log statement
+function printHello() {
+  return "Hello there!";
+}
+undefined
+printHello()
+"Hello there!"
+printHello = () => "Hello there!";
+() => "Hello there!"
+// Original addition function
+function addition(a, b) {
+  return a + b;
+}
+undefined
+// Arrow function
+undefined
+addition = (a, b) => a + b;
+(a, b) => a + b
+// Original doubleAddition function
+function doubleAddition(c, d) {
+  var total = addition(c, d) * 2;
+  return total;
+}
+undefined
+// convrt to Arow function
+undefined
+doubleAddition = (c, d) => addition(c, d)* 2;
+(c, d) => addition(c, d)* 2
+doubleAddition(33, 25);
+116
+let friends = ["Sarah", "Greg", "Cindy", "Jeff"];
+undefined
+function listLoop(userList) {
+   for (var i = 0; i < userList.length; i++) {
+     console.log(userList[i]);
+   }
+}
+undefined
+listLoop(friends);
+VM1103:3 Sarah
+VM1103:3 Greg
+VM1103:3 Cindy
+VM1103:3 Jeff
+undefined
+console.log(listLoop(friends));
+VM1103:3 Sarah
+VM1103:3 Greg
+VM1103:3 Cindy
+VM1103:3 Jeff
+VM1241:1 undefined
+undefined
+let vegetables = ["Carrots", "Peas", "Lettuce", "Tomatoes"];
+undefined
+for(var i = 0; i < vegetables.length; i++) {
+    
+VM1357:2 Uncaught SyntaxError: Unexpected end of input
+for(var i = 0; i < vegetables.length; i++) {
+    console.log('I love " +vegetables[i]);
+}
+VM1459:2 Uncaught SyntaxError: Invalid or unexpected token
+function listLoop (vegetables) {
+    let vegetables = ["Carrots", "Peas", "Lettuce", "Tomatoes"];
+VM1580:2 Uncaught SyntaxError: Identifier 'vegetables' has already been declared
+function listLoop(vegetables){
+    let vegetables = ["Carrots", "Peas", "Lettuce", "Tomatoes"];
+VM1777:2 Uncaught SyntaxError: Identifier 'vegetables' has already been declared
+var vegetables = ["Carrots", "Peas", "Lettuce", "Tomatoes"];
+
+for (var i = 0; i < vegetables.length; i++) {
+    console.log("I love " + vegetables[i]);
+}
+VM1782:1 Uncaught SyntaxError: Identifier 'vegetables' has already been declared
+    at <anonymous>:1:1
+(anonymous) @ VM1782:1
+for (var i = 0; i < 5; i++) {
+   console.log("I am " + i);
+}
+VM1787:2 I am 0
+VM1787:2 I am 1
+VM1787:2 I am 2
+VM1787:2 I am 3
+VM1787:2 I am 4
