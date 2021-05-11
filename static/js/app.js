@@ -1,6 +1,7 @@
 function buildTable(data) {
      // First, clear out any existing data
-  tbody.html("");
+    var tbody = d3.select("tbody");
+    tbody.html("");
 
   // Next, loop through each object in the data
   // and append a row and cells for each value in the row
