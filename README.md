@@ -8,7 +8,7 @@ I built and styled an interactive and visually appealing table table, using basi
 
 ## Results
 
-The filter in the webpage allows the users to refine their search using five differnt filters (**date***, **city**, **state**, **country** and **shape** ).
+The filter in the webpage allows the users to refine their search using five differnt filters (**date**, **city**, **state**, **country** and **shape** ).
 
 The webpage without filter contains all the information in the data I worked with.
 
